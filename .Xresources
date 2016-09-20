@@ -1,17 +1,74 @@
-! ------------------------------------------------------------------------------
-! ROFI Color theme
-! ------------------------------------------------------------------------------
-! Use extended color scheme
-rofi.color-enabled:                  true
-! Color scheme for normal row
-rofi.color-normal:                   #212121,#EEEEEE,#272727,#EEEEEE,#212121
-! Color scheme for urgent row
-rofi.color-urgent:                   #ffffff,#dc322f,#f5f5f5,#5294e2,#dc322f
-! Color scheme for active row
-rofi.color-active:                   #212121,#EEEEEE,#272727,#EEEEEE,#212121
-! Color scheme window
-rofi.color-window:                   #212121,#212121
-! Separator style (none, dash, solid)
-rofi.separator-style:                solid
-rofi.padding: 4
-rofi.opacity: 90
+! ----------------------------------------
+!            S Y N A P T I C
+! ----------------------------------------
+
+!-----------------------------------------
+! Fonts
+!-----------------------------------------
+
+! Terminus
+URxvt.font: xft:Hack:size=10,xft:FontAwesome:size=10
+
+
+!------------------------------------------
+! Colors (from dracula)
+!------------------------------------------
+
+! Darks
+*color0:  #000000
+*color8:  #4d4d4d
+
+! Reds
+*color1:  #ff5555
+*color9:  #ff6e67
+
+! Greens
+*color2:  #50fa7b
+*color10: #5af78e
+
+! Yellows
+*color3:  #f1fa8c
+*color11: #f4f99d
+
+! Blues
+*color4:  #caa9fa
+*color12: #caa9fa
+
+! Magenta
+*color5:  #ff79c6
+*color13: #ff92d0
+
+! Cyan
+*color6:  #8be9fd
+*color14: #9aedfe
+
+! Lights
+*color7:  #bfbfbf
+*color15: #e6e6e6
+
+!------------------------------------------
+! Urxvt
+!------------------------------------------
+
+! Colors
+
+! Uncomment if not using transparency down below
+!URxvt.background: #222222
+URxvt.foreground: #f8f8f2
+
+! Remove that damn scroll bar
+URxvt.scrollBar: false
+
+! Setup some sweet scrolling action
+URxvt.jumpScroll: false
+
+! Add Shift+Up and Shift+Down as keyboard actions
+URxvt.keysym.Shift-Up: command:\033]720;1\007
+URxvt.keysym.Shift-Down: command:\033]721;1\007
+
+! Add some padding on the inside
+URxvt.internalBorder: 10
+
+! Transparency
+urxvt*depth: 32
+urxvt*background: rgba:2222/2222/2222/fdcc
