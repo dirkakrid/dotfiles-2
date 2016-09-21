@@ -11,6 +11,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'dracula/vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'posva/vim-vue'
 
 " All plugins above this line
 call vundle#end() 		"required
@@ -30,3 +32,19 @@ color dracula
 
 " Make sure vim shows the modes
 set showmode
+
+" Indentation
+set tabstop=2
+set autoindent
+set shiftwidth=2
+set smartindent
+
+" Uncomment if you want to replace tabs with spaces
+set expandtab
+
+" Open NERDTree on startup
+autocmd vimenter * NERDTree
+
+" Open NERDTree when no files are specified (eg. `vim`)
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
