@@ -23,7 +23,7 @@ As always, if I've missed anything let me know by creating an issue
 ![](/screenshots/i3/3.png)
 
 ## Software
-+ **Window Manager**: [Openbox](http://openbox.org/wiki/Main_Page)
++ **Window Manager**: [Openbox](http://openbox.org/wiki/Main_Page) or [i3](https://github.com/Airblader/i3)
 + **Bar**: [Lemonbar (a fork that supports ttf fonts)](https://github.com/krypt-n/bar)
 + **Launcher**: [Rofi](https://davedavenport.github.io/rofi/)
 + **Lock Screen**: [i3lock (fork)](https://github.com/Lixxia/i3lock)
